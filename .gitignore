@@ -1,2 +1,2 @@
-/www/api/user_images/*
-/www/api/comment_files/*
+/api/user_images/*
+/api/comment_files/*
