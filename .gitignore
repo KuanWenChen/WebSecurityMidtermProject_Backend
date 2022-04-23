@@ -1,2 +1,4 @@
+!/api/user_images/.htaccess
+!/api/comment_files/.htaccess
 /api/user_images/*
 /api/comment_files/*
