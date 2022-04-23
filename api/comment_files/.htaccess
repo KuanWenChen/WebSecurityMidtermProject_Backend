@@ -1,0 +1,16 @@
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+<IfModule mod_headers.c>
+    Header set Content-Disposition attachment
+</IfModule>
+
+<IfModule !mod_headers.c>
+    RemoveHandler .cgi .php .php3 .php4 .php5 .phtml .pl .py .pyc .pyo .html .js
+    AddType text/plain *
+    php_flag engine off
+</IfModule>
+
+
