@@ -3,7 +3,7 @@ order allow,deny
 deny from all
 </Files>
 
+order deny,allow
 <Files ~ "\.(jpg|jpeg|png|gif)$">
-   order deny,allow
    allow from all
 </Files>

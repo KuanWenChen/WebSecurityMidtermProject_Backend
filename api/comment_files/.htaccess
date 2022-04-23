@@ -5,6 +5,8 @@ deny from all
 
 <IfModule mod_headers.c>
     Header set Content-Disposition attachment
+    RemoveHandler .cgi .php .php3 .php4 .php5 .phtml .pl .py .pyc .pyo .html .js
+    php_flag engine off
 </IfModule>
 
 <IfModule !mod_headers.c>
